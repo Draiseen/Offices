@@ -8,6 +8,6 @@ target 'Offices' do
   # Pods for Offices
 
   pod 'Moya'
-
+  pod 'SnapKit'
 
 end

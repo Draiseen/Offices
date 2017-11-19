@@ -49,7 +49,7 @@ struct Address: Codable {
   let schedule: String
 }
 
-struct Institutions: Codable {
+struct Institution: Codable {
   let addresses: [Address]
   let id: String
   let imageHref: String
@@ -66,13 +66,13 @@ class ServerManager {
   
   private let provider = MoyaProvider<MoyaService>()
   
-  func getInstitutions(with successHandler: @escaping ([Institutions]) -> (), or errorHandler: @escaping (String) -> ()) {
+  func getInstitutions(with successHandler: @escaping ([Institution]) -> (), or errorHandler: @escaping (String) -> ()) {
     provider.request(.getClients) { result in
       switch result {
       case .success(let response):
         print(response)
         do {
-          let data = try JSONDecoder().decode([String:Institutions].self, from: response.data)
+          let data = try JSONDecoder().decode([String:Institution].self, from: response.data)
           successHandler(Array(data.values).sorted{ $0.id < $1.id })
         }
         catch let error {

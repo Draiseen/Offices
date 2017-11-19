@@ -13,6 +13,7 @@
 		8469D69C1FC0532E00AC3DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469D69B1FC0532E00AC3DC2 /* AppDelegate.swift */; };
 		8469D6A31FC0532E00AC3DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8469D6A21FC0532E00AC3DC2 /* Assets.xcassets */; };
 		8469D6A61FC0532E00AC3DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8469D6A41FC0532E00AC3DC2 /* LaunchScreen.storyboard */; };
+		8497F9351FC21A0B008BE9A3 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8497F9341FC21A0B008BE9A3 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		8469D6A21FC0532E00AC3DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8469D6A51FC0532E00AC3DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8469D6A71FC0532E00AC3DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8497F9341FC21A0B008BE9A3 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		9B55B5800D6C9FDBB13D3DC9 /* Pods-Offices.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offices.release.xcconfig"; path = "Pods/Target Support Files/Pods-Offices/Pods-Offices.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 			children = (
 				8469D69B1FC0532E00AC3DC2 /* AppDelegate.swift */,
 				841940C51FC071170051558D /* ServerManager.swift */,
+				8497F9341FC21A0B008BE9A3 /* Common.swift */,
 				841940C31FC0617D0051558D /* MainVC.swift */,
 				8469D6A21FC0532E00AC3DC2 /* Assets.xcassets */,
 				8469D6A41FC0532E00AC3DC2 /* LaunchScreen.storyboard */,
@@ -201,12 +204,14 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -220,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8497F9351FC21A0B008BE9A3 /* Common.swift in Sources */,
 				8469D69C1FC0532E00AC3DC2 /* AppDelegate.swift in Sources */,
 				841940C61FC071170051558D /* ServerManager.swift in Sources */,
 				841940C41FC0617D0051558D /* MainVC.swift in Sources */,
