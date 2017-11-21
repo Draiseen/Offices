@@ -9,5 +9,6 @@ target 'Offices' do
 
   pod 'Moya'
   pod 'SnapKit'
+  pod 'Kingfisher'
 
 end

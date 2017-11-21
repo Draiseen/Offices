@@ -29,11 +29,11 @@ class MainVC: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
     title = "Список заведений"
     view.backgroundColor = .red
     
     institutionsView.dataSource = self
+    institutionsView.delegate = self
     institutionsView.register(InstitutionCell.self, forCellReuseIdentifier: InstitutionCell.reuseId)
     
     loadInstitutions()
@@ -70,6 +70,14 @@ extension MainVC: UITableViewDataSource {
     guard let institutionCell = tableView.dequeueReusableCell(withIdentifier: InstitutionCell.reuseId, for: indexPath) as? InstitutionCell, let institutionsArray = institutionsArray else { return UITableViewCell() }
     institutionCell.set(institution: institutionsArray[indexPath.row])
     return institutionCell
+  }
+}
+
+extension MainVC: UITableViewDelegate {
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    guard let navigationController = navigationController, let institutionsArray = institutionsArray  else { return }
+    navigationController.pushViewController(InstitutionVC.init(with: institutionsArray[indexPath.row]), animated: true)
   }
 }
 
@@ -110,6 +118,7 @@ class InstitutionCell: UITableViewCell, ReusableView {
   
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
+    self.selectionStyle = .none
     setAutolayout()
   }
   

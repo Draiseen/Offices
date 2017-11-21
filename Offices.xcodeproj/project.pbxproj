@@ -10,6 +10,7 @@
 		02029AA24F3D09D38FCF2B53 /* Pods_Offices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A92495E561265B98F257FFA /* Pods_Offices.framework */; };
 		841940C41FC0617D0051558D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841940C31FC0617D0051558D /* MainVC.swift */; };
 		841940C61FC071170051558D /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841940C51FC071170051558D /* ServerManager.swift */; };
+		845D07031FC3665000C0BD2D /* InstitutionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845D07021FC3665000C0BD2D /* InstitutionVC.swift */; };
 		8469D69C1FC0532E00AC3DC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469D69B1FC0532E00AC3DC2 /* AppDelegate.swift */; };
 		8469D6A31FC0532E00AC3DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8469D6A21FC0532E00AC3DC2 /* Assets.xcassets */; };
 		8469D6A61FC0532E00AC3DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8469D6A41FC0532E00AC3DC2 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 		60DC76277A81CF1AC37BDDE2 /* Pods-Offices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Offices.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Offices/Pods-Offices.debug.xcconfig"; sourceTree = "<group>"; };
 		841940C31FC0617D0051558D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		841940C51FC071170051558D /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
+		845D07021FC3665000C0BD2D /* InstitutionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstitutionVC.swift; sourceTree = "<group>"; };
 		8469D6981FC0532E00AC3DC2 /* Offices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Offices.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8469D69B1FC0532E00AC3DC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8469D6A21FC0532E00AC3DC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				841940C51FC071170051558D /* ServerManager.swift */,
 				8497F9341FC21A0B008BE9A3 /* Common.swift */,
 				841940C31FC0617D0051558D /* MainVC.swift */,
+				845D07021FC3665000C0BD2D /* InstitutionVC.swift */,
 				8469D6A21FC0532E00AC3DC2 /* Assets.xcassets */,
 				8469D6A41FC0532E00AC3DC2 /* LaunchScreen.storyboard */,
 				8469D6A71FC0532E00AC3DC2 /* Info.plist */,
@@ -202,6 +205,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Offices/Pods-Offices-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -209,6 +213,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -225,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845D07031FC3665000C0BD2D /* InstitutionVC.swift in Sources */,
 				8497F9351FC21A0B008BE9A3 /* Common.swift in Sources */,
 				8469D69C1FC0532E00AC3DC2 /* AppDelegate.swift in Sources */,
 				841940C61FC071170051558D /* ServerManager.swift in Sources */,
